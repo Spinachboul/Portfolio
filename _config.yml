@@ -9,6 +9,8 @@ description: Personal Website
 # > set this to "", if you renamed the repository to <user>.github.io
 baseurl: "/portfolio"
 
+destination: _site
+
 # LANDING PAGE
 # username: This will displayed on the landing page as your name.
 username: Mridul
