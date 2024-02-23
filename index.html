@@ -11,31 +11,50 @@
 
 <!--   <link rel="stylesheet" href="style.css"> -->
   <style>
-        * Table styles */ table {
+        /* Table styles */
+        table {
             width: 100%;
             border-collapse: collapse;
             border: 1px solid #ddd;
             margin: 1em 0;
+            overflow-x: auto; /* Enable horizontal scrolling on small screens */
         }
-
+    
+        th, td {
+            padding: 0.5em 1em;
+            border: 1px solid #ddd;
+        }
+    
         th {
             background-color: #aa0000a8;
             color: white;
             font-weight: bold;
-            padding: 0.5em 1em;
-            border: 1px solid #ddd;
         }
-
-        td {
-            padding: 0.5em 1em;
-            border: 1px solid #ddd;
-        }
-
-
-
+    
         /* Add a slight hover effect for rows */
         tr:hover td {
             background-color: #000000;
+        }
+    
+        /* Responsive styles */
+        @media only screen and (max-width: 768px) {
+            /* Hide the headers in smaller screens */
+            thead {
+                display: none;
+            }
+            /* Display table rows as blocks for better vertical scrolling on small screens */
+            tr {
+                display: block;
+                border-bottom: 1px solid #ddd;
+            }
+            /* Adjust the padding of cells for better spacing on small screens */
+            td {
+                padding: 0.5em;
+            }
+            /* Adjust the font size for better readability on small screens */
+            th, td {
+                font-size: 0.8em;
+            }
         }
     </style>
 
